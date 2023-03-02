@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {MouseEvent} from 'react';
 import './App.css';
-// import NewComponent from './NewComponent';
+import Button from './Button';
+import NewComponent from './NewComponent';
 
 
 
@@ -28,9 +29,36 @@ import './App.css';
 
 
 function App(){
+  // const myFirsSubscriber = (event: MouseEvent<HTMLButtonElement>) => {alert('Hello, i am Vasya')}
+  // const subscriber = (event: MouseEvent<HTMLButtonElement>) => {alert('Hello, i am Ivan')}
+  // const onClickHandler = (name: string) => {alert(name)}
+  // const foo1 = () => {alert('100200')}
+  // const foo2 = (num: number) => {alert(num)}
+const Button1Foo = () => {alert('I am Vasya')}
+const Button2Foo = () => {alert('I am Ivan')}
+
   return (
-  //  <NewComponent students={students}/>
-  // <NewComponent cars={cars}/>
+  <div>
+   {/* 
+  <NewComponent students={students}/>
+  <NewComponent cars={cars}/> */}
+
+  {/* <button onClick={(event: MouseEvent<HTMLButtonElement>) => onClickHandler('Vasya')}>AddYoutubeChannel-1</button>
+  <button onClick={(event: MouseEvent<HTMLButtonElement>) => onClickHandler('Ivan')}>AddYoutubeChannel-2</button> */}
+ 
+ 
+  <Button name={"YoutubeChannel-1"} callBack={Button1Foo}/>
+  <Button name={"YoutubeChannel-2"} callBack={Button2Foo}/>
+
+  {/* <button>AddYoutubeChannel-1</button>
+  <button>AddYoutubeChannel-2</button> */}
+
+
+{/* <button onClick={foo1}>1</button>
+<button onClick={() => foo2(100200)}>2</button> */}
+
+
+</div>
   );
 }
 

@@ -1,4 +1,4 @@
-// import React from 'react'
+import React from 'react'
 
 // type StudentsTypeAll = {
 //   students: Array<StudentsPropsItems>
@@ -49,7 +49,16 @@
 
 
 
+const NewComponent = () => {
+  return (
+    <div></div>
+  )
+}
 
 
 
-// export default NewComponent;
+
+
+
+
+export default NewComponent;
