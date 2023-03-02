@@ -26,30 +26,30 @@
 
 // export default NewComponent;
 
-import React from 'react';
-type CarsProps = {
-  cars: Array<ItemCarProps>
-}
-type ItemCarProps = {
-  manufacturer: string,
-  model: string
-}
-const NewComponent = (props: CarsProps) => {
-  return (
-    <ul>
-      {props.cars.map((CarMap, index) => {
-        return <li key={CarMap.manufacturer}>
-          {CarMap.manufacturer}
-          {CarMap.model}
-          </li>
-      })}
-    </ul>
-  )
-}
+// import React from 'react';
+// type CarsProps = {
+//   cars: Array<ItemCarProps>
+// }
+// type ItemCarProps = {
+//   manufacturer: string,
+//   model: string
+// }
+// const NewComponent = (props: CarsProps) => {
+//   return (
+//     <ul>
+//       {props.cars.map((CarMap, index) => {
+//         return <li key={CarMap.manufacturer}>
+//           {CarMap.manufacturer}
+//           {CarMap.model}
+//           </li>
+//       })}
+//     </ul>
+//   )
+// }
 
 
 
 
 
 
-export default NewComponent;
+// export default NewComponent;

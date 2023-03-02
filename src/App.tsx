@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import NewComponent from './NewComponent';
+// import NewComponent from './NewComponent';
 
 
 
@@ -19,18 +19,18 @@ import NewComponent from './NewComponent';
 // ]
 
 
-const cars = [
-  {manufacturer:'BMW', model:'m5cs'},
-  {manufacturer:'Mercedes', model:'e63s'},
-  {manufacturer:'Audi', model:'rs6'}
-]
+// const cars = [
+//   {manufacturer:'BMW', model:'m5cs'},
+//   {manufacturer:'Mercedes', model:'e63s'},
+//   {manufacturer:'Audi', model:'rs6'}
+// ]
 
 
 
 function App(){
   return (
   //  <NewComponent students={students}/>
-  <NewComponent cars={cars}/>
+  // <NewComponent cars={cars}/>
   );
 }
 
