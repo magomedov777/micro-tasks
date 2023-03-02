@@ -34,9 +34,9 @@ function App(){
   // const onClickHandler = (name: string) => {alert(name)}
   // const foo1 = () => {alert('100200')}
   // const foo2 = (num: number) => {alert(num)}
-const Button1Foo = () => {alert('I am Vasya')}
-const Button2Foo = () => {alert('I am Ivan')}
-
+const Button1Foo = (subscriber: string, age: number) => {console.log(subscriber, age)}
+const Button2Foo = (subscriber: string, age: number) => {console.log(subscriber, age)}
+const Button3Foo = () => {console.log('I am stupid button')}
   return (
   <div>
    {/* 
@@ -47,8 +47,10 @@ const Button2Foo = () => {alert('I am Ivan')}
   <button onClick={(event: MouseEvent<HTMLButtonElement>) => onClickHandler('Ivan')}>AddYoutubeChannel-2</button> */}
  
  
-  <Button name={"YoutubeChannel-1"} callBack={Button1Foo}/>
-  <Button name={"YoutubeChannel-2"} callBack={Button2Foo}/>
+  <Button name={"YoutubeChannel-1"} callBack={() => Button1Foo('I am Vasya', 21)}/>
+  <Button name={"YoutubeChannel-2"} callBack={() => Button2Foo('I am Ivan', 24)}/>
+
+  <Button name={'Stupid'} callBack={Button3Foo}/>
 
   {/* <button>AddYoutubeChannel-1</button>
   <button>AddYoutubeChannel-2</button> */}
