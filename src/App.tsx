@@ -37,27 +37,21 @@ function App(){
 // const Button1Foo = (subscriber: string, age: number) => {console.log(subscriber, age)}
 // const Button2Foo = (subscriber: string, age: number) => {console.log(subscriber, age)}
 // const Button3Foo = () => {console.log('I am stupid button')}
-const plus = () => {
-     setC(++c)
-};
+let plus = () => {setNumber(++number)}
+let minus = () => {setNumber(--number)}
+let del = () => {setNumber(0)}
 
-const minus = () => {
-  setC(--c)
-};  
-const cancel = () => {
-  setC(0)
-}; 
-
-let[c, setC] = useState(1);
-
+let[number, setNumber] = useState(0)
 return (
   <div>
-   <div style={{marginLeft: '350px'}}>
-    <h1>{c}</h1>
-    <button onClick={plus}>+</button>
-    <button onClick={minus}>-</button>
-    <button onClick={cancel}>cancel</button>
-   </div>
+    <h1 style={{display: 'flex', justifyContent: 'center'}}>{number}</h1>
+      <div style={{display: 'flex', justifyContent: 'center'}}>
+        <button onClick={plus} style={{margin: '10px'}}>PLUS</button>
+        <button onClick={del} style={{margin: '10px'}}>NULL</button>
+        <button onClick={minus} style={{margin: '10px'}}>MINUS</button>
+      </div>
+  </div>
+   )}
 
    {/* 
   <NewComponent students={students}/>
@@ -80,8 +74,7 @@ return (
 <button onClick={() => foo2(100200)}>2</button> */}
 
 
-</div>
-  );
-}
+
+
 
 export default App;
