@@ -1,7 +1,7 @@
-import React, {MouseEvent} from 'react';
+import React, {MouseEvent, useState} from 'react';
 import './App.css';
-import Button from './Button';
-import NewComponent from './NewComponent';
+// import Button from './Button';
+// import NewComponent from './NewComponent';
 
 
 
@@ -34,11 +34,31 @@ function App(){
   // const onClickHandler = (name: string) => {alert(name)}
   // const foo1 = () => {alert('100200')}
   // const foo2 = (num: number) => {alert(num)}
-const Button1Foo = (subscriber: string, age: number) => {console.log(subscriber, age)}
-const Button2Foo = (subscriber: string, age: number) => {console.log(subscriber, age)}
-const Button3Foo = () => {console.log('I am stupid button')}
-  return (
+// const Button1Foo = (subscriber: string, age: number) => {console.log(subscriber, age)}
+// const Button2Foo = (subscriber: string, age: number) => {console.log(subscriber, age)}
+// const Button3Foo = () => {console.log('I am stupid button')}
+const plus = () => {
+     setC(++c)
+};
+
+const minus = () => {
+  setC(--c)
+};  
+const cancel = () => {
+  setC(0)
+}; 
+
+let[c, setC] = useState(1);
+
+return (
   <div>
+   <div style={{marginLeft: '350px'}}>
+    <h1>{c}</h1>
+    <button onClick={plus}>+</button>
+    <button onClick={minus}>-</button>
+    <button onClick={cancel}>cancel</button>
+   </div>
+
    {/* 
   <NewComponent students={students}/>
   <NewComponent cars={cars}/> */}
@@ -46,11 +66,11 @@ const Button3Foo = () => {console.log('I am stupid button')}
   {/* <button onClick={(event: MouseEvent<HTMLButtonElement>) => onClickHandler('Vasya')}>AddYoutubeChannel-1</button>
   <button onClick={(event: MouseEvent<HTMLButtonElement>) => onClickHandler('Ivan')}>AddYoutubeChannel-2</button> */}
  
- 
+{/*  
   <Button name={"YoutubeChannel-1"} callBack={() => Button1Foo('I am Vasya', 21)}/>
   <Button name={"YoutubeChannel-2"} callBack={() => Button2Foo('I am Ivan', 24)}/>
 
-  <Button name={'Stupid'} callBack={Button3Foo}/>
+  <Button name={'Stupid'} callBack={Button3Foo}/> */}
 
   {/* <button>AddYoutubeChannel-1</button>
   <button>AddYoutubeChannel-2</button> */}

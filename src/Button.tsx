@@ -1,18 +1,16 @@
 import React from 'react';
 
-type ButtonType = {
-    name: string,
-    callBack: () => void
-}
+// // type ButtonType = {
+// //     name: string,
+// //     callBack: () => void
+// // }
 
-const Button = (props: ButtonType) => {
-    const onClickHandler = () => {props.callBack()}
-  return (
-    <button onClick={onClickHandler}>{props.name}</button>
-  )
-}
-
-
+// // const Button = (props: ButtonType) => {
+// //     const onClickHandler = () => {props.callBack()}
+// //   return (
+// //     <button onClick={onClickHandler}>{props.name}</button>
+// //   )
+// // }
 
 
 
@@ -20,4 +18,6 @@ const Button = (props: ButtonType) => {
 
 
 
-export default Button;
+
+
+// export default Button;
