@@ -1,25 +1,31 @@
-import React, {MouseEvent, useState} from 'react';
+import React, { MouseEvent, useState } from 'react';
 import './App.css';
-import Fullinput from './Fullinput';
+import Button from './Button';
+import Input from './Input';
 
 
 const App = () => {
-  let[message, setMessage] = useState([
-    {message: 'message1'},
-    {message: 'message2'},
-    {message: 'message3'}
-
+  let [message, setMessage] = useState([
+    { message: 'message1' },
+    { message: 'message2' },
+    { message: 'message3' }
   ])
+  let [title, setTitle] = useState('')
+
   const addMessage = (title: string) => {
-    let newMessage = {message: title}
+    let newMessage = { message: title }
     setMessage([newMessage, ...message])
-    
+  }
+  const callbackButtonHandler = () => {
+    addMessage(title)
+    setTitle('')
   }
   return (
     <div className={'App'}>
-   <Fullinput addMessage={addMessage} />
+      <Input setTitle={setTitle} title={title} />
+      <Button name={'+'} callBack={callbackButtonHandler} />
       {message.map((el, index) => {
-        return(
+        return (
           <div key={index}>{el.message}</div>
         )
       })}
