@@ -22,8 +22,7 @@ const App = () => {
   }
   return (
     <div className={'App'}>
-      <Input setTitle={setTitle} title={title} />
-      <Button name={'+'} callBack={callbackButtonHandler} />
+    
       {message.map((el, index) => {
         return (
           <div key={index}>{el.message}</div>
