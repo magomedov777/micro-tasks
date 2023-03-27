@@ -10,13 +10,11 @@ const App = () => {
     { message: 'message3' }
   ])
 
-
-
-  return (
+return (
     <div className={'App'}>
       <input type="text" />
       <button>+</button>
-    
+
       {message.map((el, index) => {
         return (
           <div key={index}>{el.message}</div>
