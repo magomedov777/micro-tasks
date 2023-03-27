@@ -23,6 +23,7 @@ const App = () => {
   return (
     <div className={'App'}>
       <input type="text" />
+      <button>+</button>
     
       {message.map((el, index) => {
         return (
