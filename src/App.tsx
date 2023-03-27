@@ -12,14 +12,7 @@ const App = () => {
   ])
   let [title, setTitle] = useState('')
 
-  const addMessage = (title: string) => {
-    let newMessage = { message: title }
-    setMessage([newMessage, ...message])
-  }
-  const callbackButtonHandler = () => {
-    addMessage(title)
-    setTitle('')
-  }
+
   return (
     <div className={'App'}>
       <input type="text" />
