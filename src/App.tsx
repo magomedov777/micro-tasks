@@ -1,7 +1,6 @@
 import React, { MouseEvent, useState } from 'react';
 import './App.css';
-import Button from './Button';
-import Input from './Input';
+
 
 
 const App = () => {
@@ -10,7 +9,7 @@ const App = () => {
     { message: 'message2' },
     { message: 'message3' }
   ])
-  let [title, setTitle] = useState('')
+
 
 
   return (
