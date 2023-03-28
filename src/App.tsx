@@ -11,6 +11,7 @@ const App = () => {
     { message: 'message2' },
     { message: 'message3' }
   ])
+  
   const [title, setTitle] = useState('')
 
   const addMessage = (title: string) => {
