@@ -16,9 +16,8 @@ const App = () => {
   const addMessage = (title: string) => {
     let messNew = { message: title }
     setMessage([messNew, ...message])
-
-
   }
+  
   const callBackButtonHandler = () => {
     addMessage(title)
     setTitle('')
