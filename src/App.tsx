@@ -32,7 +32,6 @@ const App = () => {
           <div key={index}>{el.message}</div>
         )
       })}
-      
     </div>
   )
 }
