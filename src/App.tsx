@@ -17,7 +17,7 @@ const App = () => {
     let messNew = { message: title }
     setMessage([messNew, ...message])
   }
-  
+
   const callBackButtonHandler = () => {
     addMessage(title)
     setTitle('')
@@ -32,6 +32,7 @@ const App = () => {
           <div key={index}>{el.message}</div>
         )
       })}
+      
     </div>
   )
 }
