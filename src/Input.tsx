@@ -11,6 +11,7 @@ export const Input = (props: InputPropsType) => {
 
     };
     return (
+        
         <input onChange={onChangeInputHandler} value={props.title} />
     )
 };
