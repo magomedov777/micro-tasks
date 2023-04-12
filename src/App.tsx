@@ -3,7 +3,7 @@ import './App.css';
 import { Button } from './Button';
 import { Input } from './Input';
 
-const App: () => JSX.Element = () => {
+const App: () => {
   let [message, setMessage] = useState([
     { message: 'message1' },
     { message: 'message2' },
