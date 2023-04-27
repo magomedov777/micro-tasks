@@ -12,14 +12,7 @@ const App: () => JSX.Element = () => {
   const [title, setTitle] = useState('');
 
   
-  const addMessage = (title: string) => {
-    const newMessage = { message: title }
-    setMessage([newMessage, ...message])
-  };
-  const callBackAddMessage = () => {
-    addMessage(title)
-    setTitle('')
-  };
+
 
   return (
     <div className={'App'}>
