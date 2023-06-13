@@ -13,6 +13,7 @@ export const Input = (props: InputPropsType) => {
 
     const onKeyPressHandler = (event: KeyboardEvent<HTMLInputElement>) => {
         if (event.key === 'Enter') {
+            props.callBackAddMessage(props.title)
         }
     }
     return (
