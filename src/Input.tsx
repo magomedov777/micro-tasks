@@ -11,11 +11,7 @@ export const Input = (props: InputPropsType) => {
         props.setTitle(event.currentTarget.value)
     };
 
-    const onKeyPressHandler = (event: KeyboardEvent<HTMLInputElement>) => {
-        if (event.key === 'Enter') {
-            props.callBackAddMessage(props.title)
-        }
-    }
+   
     return (
         <input onKeyPress={onKeyPressHandler} onChange={onChangeInputHandler} value={props.title} />
     )
